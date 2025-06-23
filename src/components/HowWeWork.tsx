@@ -28,6 +28,12 @@ export const HowWeWork: React.FC = () => {
             />
           ))}
         </div>
+        {/* Human element background */}
+        <img
+          src="https://images.pexels.com/photos/8613200/pexels-photo-8613200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Students researching together"
+          className="absolute inset-0 w-full h-full object-cover opacity-5"
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -51,6 +57,20 @@ export const HowWeWork: React.FC = () => {
                     </div>
                   ))}
                 </div>
+
+                {/* Human element images */}
+                <div className="flex justify-center gap-2 mt-6 opacity-60">
+                  <img
+                    src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
+                    alt="Research in action"
+                    className="w-16 h-12 rounded-lg object-cover"
+                  />
+                  <img
+                    src="https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
+                    alt="Community engagement"
+                    className="w-16 h-12 rounded-lg object-cover"
+                  />
+                </div>
               </div>
             </div>
           </ScrollReveal>
@@ -70,7 +90,7 @@ export const HowWeWork: React.FC = () => {
               <ScrollReveal delay={200} direction="right">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
                   <p className="text-xl text-blue-100 leading-relaxed">
-                  We conduct local surveys and community-based research across schools, parents, and children to identify real gaps in access and quality of education.
+                    We conduct local surveys and community-based research across schools, parents, and children to identify real gaps in access and quality of education.
                   </p>
                 </div>
               </ScrollReveal>
@@ -78,7 +98,7 @@ export const HowWeWork: React.FC = () => {
               <ScrollReveal delay={400} direction="right">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300">
                   <p className="text-xl text-blue-100 leading-relaxed">
-                  These findings are shared with government stakeholders, education leaders, and local institutions to drive informed support where it matters most.
+                    These findings are shared with government stakeholders, education leaders, and local institutions to drive informed support where it matters most.
                   </p>
                 </div>
               </ScrollReveal>

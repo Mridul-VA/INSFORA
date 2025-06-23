@@ -41,13 +41,18 @@ export const Partnerships: React.FC = () => {
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F97316' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}></div>
+        {/* Human element background */}
+        <img
+          src="https://images.pexels.com/photos/8613200/pexels-photo-8613200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Partnership collaboration"
+          className="absolute inset-0 w-full h-full object-cover opacity-3"
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <ScrollReveal direction="scale">
           <div className="text-center mb-20">
             <div className="flex items-center justify-center mb-6">
-             
               <h2 className="text-5xl md:text-6xl font-black text-gray-900">
                 Our 
                 <span className="bg-gradient-to-r from-orange-500 to-blue-600 bg-clip-text text-transparent">
@@ -59,6 +64,25 @@ export const Partnerships: React.FC = () => {
               Working together with like-minded organizations to amplify our impact
             </p>
             <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-blue-600 mx-auto rounded-full mt-6"></div>
+            
+            {/* Human element images */}
+            <div className="flex justify-center gap-4 mt-8 opacity-60">
+              <img
+                src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
+                alt="Collaborative learning"
+                className="w-20 h-16 rounded-lg object-cover"
+              />
+              <img
+                src="https://images.pexels.com/photos/8613103/pexels-photo-8613103.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
+                alt="Partnership in action"
+                className="w-20 h-16 rounded-lg object-cover"
+              />
+              <img
+                src="https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
+                alt="Community impact"
+                className="w-20 h-16 rounded-lg object-cover"
+              />
+            </div>
           </div>
         </ScrollReveal>
 
@@ -95,15 +119,24 @@ export const Partnerships: React.FC = () => {
         </div>
 
         <ScrollReveal delay={800} direction="scale">
-          <div className="mt-16 bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 text-center">
-            <div className="flex items-center justify-center mb-4">
-              <Handshake size={32} className="text-orange-500 mr-3" />
-              <h3 className="text-2xl font-bold text-gray-900">Stronger Together</h3>
+          <div className="mt-16 bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 text-center relative overflow-hidden">
+            <div className="absolute inset-0 opacity-5">
+              <img
+                src="https://images.pexels.com/photos/8613103/pexels-photo-8613103.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1"
+                alt="Unity in partnership"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Through strategic partnerships, we're building a network of change-makers 
-              committed to creating lasting impact in education and youth empowerment.
-            </p>
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-4">
+                <Handshake size={32} className="text-orange-500 mr-3" />
+                <h3 className="text-2xl font-bold text-gray-900">Stronger Together</h3>
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                Through strategic partnerships, we're building a network of change-makers 
+                committed to creating lasting impact in education and youth empowerment.
+              </p>
+            </div>
           </div>
         </ScrollReveal>
       </div>

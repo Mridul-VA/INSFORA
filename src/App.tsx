@@ -5,6 +5,9 @@ import { WhatWeStandFor } from './components/WhatWeStandFor';
 import { HowWeWork } from './components/HowWeWork';
 import { OurAlignment } from './components/OurAlignment';
 import { Partnerships } from './components/Partnerships';
+import { BeAVolunteer } from './components/BeAVolunteer';
+import { CollaborateWithUs } from './components/CollaborateWithUs';
+import { BeACatalyst } from './components/BeACatalyst';
 import { LegalStatement } from './components/LegalStatement';
 import { Footer } from './components/Footer';
 
@@ -17,6 +20,9 @@ function App() {
       <HowWeWork />
       <OurAlignment />
       <Partnerships />
+      <BeAVolunteer />
+      <CollaborateWithUs />
+      <BeACatalyst />
       <LegalStatement />
       <Footer />
     </div>

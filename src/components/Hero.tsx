@@ -63,18 +63,16 @@ export const Hero: React.FC = () => {
           }}
         />
 
-        {/* Hero Image with Parallax */}
+        {/* Hero Image with Parallax - Multiple diverse images */}
         <div 
           className="absolute inset-0 opacity-30"
           style={{ transform: `translateY(${scrollY * 0.3}px)` }}
         >
           <img
-          src="/hero-banner.jpg"
-          alt="Students studying together"
-          className="w-full h-full object-cover"
+            src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Indian school children learning together"
+            className="w-full h-full object-cover"
           />
-
-         
         </div>
 
         {/* Animated Overlay */}
@@ -92,8 +90,6 @@ export const Hero: React.FC = () => {
             />
             <div className="absolute -inset-10 bg-gradient-to-r from-blue-400/20 to-purple-400/20 blur-2xl -z-10 animate-pulse rounded-full" />
           </div>
-
-
         </ScrollReveal>
         
         <ScrollReveal delay={300} direction="up">

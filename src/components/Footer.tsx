@@ -28,13 +28,12 @@ export const Footer: React.FC = () => {
           
           <div className="flex items-center justify-center mb-4">
           <img
-            src="/insfora-2.png" // or your actual file name
+            src="/insfora-2.png"
             alt="INSFORA Logo"
-            className="w-40 h-auto drop-shadow-lg" // increase width and preserve ratio
+            className="w-40 h-auto drop-shadow-lg"
           />
         </div>
           
-
             <div className="flex items-center justify-center gap-2 text-blue-200">
               <Heart size={20} className="animate-pulse" />
               <span className="text-lg">Together for Change. Together for Direction.</span>
@@ -100,7 +99,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="hidden md:block w-1 h-1 bg-blue-400 rounded-full"></div>
               <div className="text-center">
-                INSFORA is a non-commercial, student-run initiative.
+                INSFORA is a non-profit, student-run initiative.
               </div>
             </div>
             

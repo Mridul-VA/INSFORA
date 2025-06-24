@@ -10,6 +10,7 @@ import { CollaborateWithUs } from './components/CollaborateWithUs';
 import { BeACatalyst } from './components/BeACatalyst';
 import { LegalStatement } from './components/LegalStatement';
 import { Footer } from './components/Footer';
+import { SurveyPopup } from './components/SurveyPopup';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <BeACatalyst />
       <LegalStatement />
       <Footer />
+      <SurveyPopup />
     </div>
   );
 }

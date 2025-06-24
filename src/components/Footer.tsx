@@ -1,7 +1,11 @@
 import React from 'react';
-import { Mail, Instagram, Facebook, Copyright, Heart } from 'lucide-react';
+import { Mail, Instagram, Facebook, Copyright, Heart, MessageCircle } from 'lucide-react';
 
 export const Footer: React.FC = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/919876543210', '_blank');
+  };
+
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 text-white py-20 relative overflow-hidden">
       {/* Background Animation */}
@@ -41,7 +45,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
             <a 
               href="mailto:team@insfora.in" 
               className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1">
@@ -89,6 +93,21 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
             </a>
+
+            <button
+              onClick={handleWhatsAppClick}
+              className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="flex flex-col items-center gap-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <MessageCircle size={28} className="text-white" />
+                </div>
+                <div>
+                  <div className="text-sm text-blue-200 mb-1">Chat With Us</div>
+                  <div className="text-lg font-semibold">WhatsApp</div>
+                </div>
+              </div>
+            </button>
           </div>
           
           <div className="border-t border-white/20 pt-8">

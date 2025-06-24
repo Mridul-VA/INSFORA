@@ -28,12 +28,6 @@ export const HowWeWork: React.FC = () => {
             />
           ))}
         </div>
-        {/* Human element background */}
-        <img
-          src="https://images.pexels.com/photos/8613200/pexels-photo-8613200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Students researching together"
-          className="absolute inset-0 w-full h-full object-cover opacity-5"
-        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -56,20 +50,6 @@ export const HowWeWork: React.FC = () => {
                       <div className="text-white/80 text-sm font-medium">{step.title}</div>
                     </div>
                   ))}
-                </div>
-
-                {/* Human element images */}
-                <div className="flex justify-center gap-2 mt-6 opacity-60">
-                  <img
-                    src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
-                    alt="Research in action"
-                    className="w-16 h-12 rounded-lg object-cover"
-                  />
-                  <img
-                    src="https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=200&h=150&dpr=1"
-                    alt="Community engagement"
-                    className="w-16 h-12 rounded-lg object-cover"
-                  />
                 </div>
               </div>
             </div>

@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Navigation Bar */}
-      <nav className="relative z-20 bg-white/10 backdrop-blur-md border-b border-white/20">
+      <nav className="relative z-20 bg-blue-900/80 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -50,14 +50,14 @@ export const Hero: React.FC = () => {
                 className="flex items-center gap-2 px-4 py-2 bg-green-500/20 hover:bg-green-500/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm border border-green-400/30"
               >
                 <Users size={16} />
-                <span className="hidden sm:inline">Be A Volunteer</span>
+                <span className="hidden sm:inline">Be a Volunteer</span>
               </button>
               <button
                 onClick={() => scrollToSection('collaborate-with-us')}
                 className="flex items-center gap-2 px-4 py-2 bg-blue-500/20 hover:bg-blue-500/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm border border-blue-400/30"
               >
                 <Handshake size={16} />
-                <span className="hidden sm:inline">Collaborate</span>
+                <span className="hidden sm:inline">Collaborate With Us</span>
               </button>
               <button
                 onClick={() => scrollToSection('be-a-catalyst')}
@@ -103,7 +103,7 @@ export const Hero: React.FC = () => {
             }}
           />
 
-          {/* Hero Image with Parallax - Multiple diverse images */}
+          {/* Hero Image with Parallax */}
           <div 
             className="absolute inset-0 opacity-30"
             style={{ transform: `translateY(${scrollY * 0.3}px)` }}
